@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    background: linear-gradient(-45deg, #3f3f3f, #000000, #220b35, #23002c);
+    background-size: 400% 400%;
+    animation: blackGradientBg 15s ease infinite;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@keyframes blackGradientBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title:hover {
+    color: #656eee;
+}
+
+.links{
+    font-size: 20px;
+    margin-top: 20px;
+    backdrop-filter: sepia(60%);
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    height: auto;
+    position: static;
+    /* cool border animation that isnt mine */
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF;
+    animation: borderAnimation 4s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #FFFFFF;
+        box-shadow: 0 0 10px #FFFFFF;
+    }
+    25% {
+        border-color: #656eee;
+        box-shadow: 0 0 10px #656eee;
+    }
+    50% {
+        border-color: #FF69B4;
+        box-shadow: 0 0 10px #FF69B4;
+    }
+    75% {
+        border-color: #00FFFF;
+        box-shadow: 0 0 10px #00FFFF;
+    }
+    100% {
+        border-color: #FFFFFF;
+        box-shadow: 0 0 10px #FFFFFF;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    
+    <h1 class ="title">
+        Portalzz Stuff
+    </h1>
+    <div class="links">
+        <p>
+        <a href="/links">Links</a> <br>
+		<a href="/projects">Projects</a> <br>
+        <a href="/extra">Extra</a> <br>
+        <a href="/about">About</a>
+        </p>
+    </div>
+</body>
+</html>
