@@ -4,11 +4,11 @@
 <style>
 
 body {
-    background: linear-gradient(-45deg, #3f3f3f, #000000, #220b35, #23002c);
-    background-size: 400% 400%;
+    background: linear-gradient(-45deg, #21006d, #7300c0, #240068, #690199);
+    background-size: 400%, 400%;
     animation: blackGradientBg 15s ease infinite;
     color: #FFFFFF;
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
     height: 100vh;
     margin: 0;
     background-attachment: fixed;
@@ -18,6 +18,14 @@ body {
     align-items: center;
     text-align: center;
 
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:aquamarine;
 }
 
 @keyframes blackGradientBg {
@@ -33,6 +41,7 @@ body {
 }
 
 .title:hover {
+    animation: fade-to-blue-title 0.5s forwards;
     color: #656eee;
 }
 
@@ -53,7 +62,7 @@ body {
 
 @keyframes borderAnimation {
     0% {
-        border-color: #FFFFFF;
+        border-color: #ffffff00;
         box-shadow: 0 0 10px #FFFFFF;
     }
     25% {
@@ -69,10 +78,21 @@ body {
         box-shadow: 0 0 10px #00FFFF;
     }
     100% {
-        border-color: #FFFFFF;
-        box-shadow: 0 0 10px #FFFFFF;
+        border-color: #ffffff00;
+        box-shadow: 0 0 10px #ffffff;
     }
 }
+
+@keyframes fade-to-blue-title {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: #656eee;
+    }
+}
+
 
 </style>
 </head>
