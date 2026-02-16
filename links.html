@@ -1,17 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>portalzz - linkzz</title>
+    <title>portalzz</title>
     <link rel = "icon" href="favicon.png" type = image/png>
 <style>
-    
+
+body {
+    background: linear-gradient(-45deg, aquamarine, rgb(18, 16, 158),rgb(128, 234, 241) , #cf00f8);
+    background-size: 400%, 400%;
+    animation: blackGradientBg 15s ease infinite;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: #4248f5;
+}
+
+a:hover {
+    color:aquamarine;
+}
+
+@keyframes blackGradientBg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title:hover {
+    animation: fade-to-blue-title 0.5s forwards;
+    color: #656eee;
+}
+
+.links{
+    font-size: 20px;
+    margin-top: 20px;
+    backdrop-filter: invert(60%);
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    height: auto;
+    position: static;
+    /* cool border animation that isnt mine */
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 10px #FFFFFF;
+    animation: borderAnimation 4s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #ffffff00;
+        box-shadow: 0 0 10px #FFFFFF;
+    }
+    25% {
+        border-color: #656eee;
+        box-shadow: 0 0 10px #656eee;
+    }
+    50% {
+        border-color: #FF69B4;
+        box-shadow: 0 0 10px #FF69B4;
+    }
+    75% {
+        border-color: #00FFFF;
+        box-shadow: 0 0 10px #00FFFF;
+    }
+    100% {
+        border-color: #ffffff00;
+        box-shadow: 0 0 10px #ffffff;
+    }
+}
+
+@keyframes fade-to-blue-title {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: #656eee;
+    }
+}
+
+
 </style>
 </head>
 <body>
-<div class = links>
-    <a href="https://www.youtube.com/@portalzz_z"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBkZ_nYaPkM4Qm6VQgxEeMX2vSHYIgw8YBw&s"></a>
-    <a href="https://gdbrowser.com/u/portalzzGD"><img src="https://static.wikia.nocookie.net/logopedia/images/4/41/Geometry_Dash_Icon.svg/revision/latest?cb=20220220121501"></a>
-    </div>
 
+    
+    <h1 class ="title">
+        Links
+    </h1>
+    <div class="links">
+        <p>
+        <a href="https://www.youtube.com/@portalzz_z">Youtube</a> <br>
+		<a href="https://www.gdbrowser.com/u/portalzzGD">Geometry Dash</a> <br>
+        <a href="https://www.portalzz.github.io">Home</a>
+        </p>
+    </div>
 </body>
 </html>
