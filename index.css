@@ -135,3 +135,14 @@ a:hover {
     width: 160px;
     height: 160px;
 }
+
+audio {
+    position: absolute;
+    bottom: 35px;
+    background-color: none;
+}
+
+.bgm {
+    position: absolute;
+    bottom: 65px;
+}
