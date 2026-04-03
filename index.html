@@ -1,117 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>portalzz</title>
-    <link rel = "icon" href="favicon.png" type = image/png>
-<style>
-
-body {
-    background: linear-gradient(-45deg, #21006d, #7300c0, #240068, #690199);
-    background-size: 400%, 400%;
-    animation: blackGradientBg 15s ease infinite;
-    color: #FFFFFF;
-    font-family: Helvetica, sans-serif;
-    height: 100vh;
-    margin: 0;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-
-a {
-    text-decoration: none;
-	color: #4248f5;
-}
-
-a:hover {
-    color:aquamarine;
-}
-
-@keyframes blackGradientBg {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.title:hover {
-    animation: fade-to-blue-title 0.5s forwards;
-    color: #656eee;
-}
-
-.links{
-    font-size: 20px;
-    margin-top: 20px;
-    backdrop-filter: sepia(60%);
-    border-radius: 10px;
-    padding: 15px;
-    width: 150px;
-    height: auto;
-    position: static;
-    /* cool border animation that isnt mine */
-    border: 2px solid #FFFFFF;
-    box-shadow: 0 0 10px #FFFFFF;
-    animation: borderAnimation 4s linear infinite;
-}
-
-@keyframes borderAnimation {
-    0% {
-        border-color: #ffffff00;
-        box-shadow: 0 0 10px #FFFFFF;
-    }
-    25% {
-        border-color: #656eee;
-        box-shadow: 0 0 10px #656eee;
-    }
-    50% {
-        border-color: #FF69B4;
-        box-shadow: 0 0 10px #FF69B4;
-    }
-    75% {
-        border-color: #00FFFF;
-        box-shadow: 0 0 10px #00FFFF;
-    }
-    100% {
-        border-color: #ffffff00;
-        box-shadow: 0 0 10px #ffffff;
-    }
-}
-
-@keyframes fade-to-blue-title {
-    0% {
-        color: white;
-    }
-
-    100% {
-        color: #656eee;
-    }
-}
-
-
-</style>
-</head>
-<body>
-
-    
-    <h1 class ="title">
-        Portalzz Stuff
-    </h1>
-    <div class="links">
-        <p>
-        <a href="/links">Links</a> <br>
-		<a href="/projects">Projects</a> <br>
-        <a href="/extra">Extra</a> <br>
-        <a href="/about">About</a>
-        </p>
-    </div>
-</body>
-</html>
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="PORTAL">
+            <title>PORTALZZ.github.io</title>
+            <link rel="icon" type="image/x-icon" href="/favicon.ico">
+            <link rel="stylesheet" href="index.css">
+        </head>
+        <body>
+        <div class="topbar">
+            <a href="/index">Home</a>
+            <a href="/links">Links</a>
+            <a href="/github">Github</a>
+            <a href="/sites">Other Sites</a>
+            <a href="/games">Games</a>
+            <a href="/stingray">Stingrays :D</a>
+        </div>
+        <div class="maindiv">
+            <h1 id="titleh1"><span class="subtitle">https://</span><span class="title">PORTALZZ</span><span class="subtitle">.github.io</span></h1>
+            <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, sapiente quis! Modi beatae corrupti, 
+            laborum quod eos unde ab! Nesciunt ipsam asperiores enim ex sequi tempora distinctio, 
+            doloremque ea corporis!</p>
+        </div>
+        <div id="clock-container">
+            <div id="clock">00:00:00</div>
+        </div>
+        <p class="sited">Site info; https://portalzz.github.io | hosted by github pages | site by a_portal2_fan (portalzz) | utf-8 encoding</p>
+        <img class="notbyai" src="/antiai.png">
+        <script src="index.js"></script>
+        </body>
+    </html>
