@@ -1,0 +1,33 @@
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/022/751/187/non_2x/snowy-mountain-peak-in-starry-night-amazing-night-sky-over-mountain-vector.jpg);
+    image-rendering: smooth;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 300px;
+    height: 300px;
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    border: solid 5px black;
+}
+
+hr {
+    border: 0;
+    border-top: 3px dashed black;
+}
