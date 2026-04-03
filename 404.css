@@ -31,3 +31,15 @@ hr {
     border: 0;
     border-top: 3px dashed black;
 }
+
+a {
+    color: #01618d;
+    text-decoration: none;
+    border-right: 0.1px solid rgb(255, 255, 255);
+    border-left: 0.1px solid rgb(255, 255, 255);
+    padding: 0 4px;
+}
+
+a:hover {
+    color: #42afca;
+}
